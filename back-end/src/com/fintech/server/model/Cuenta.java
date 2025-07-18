@@ -3,6 +3,7 @@ package com.fintech.server.model;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+// CLASE CUENTA: CONTENEDOR;
 public class Cuenta { // INICIO CLASE CUENTA;
 
 	private long codigoUnico;
