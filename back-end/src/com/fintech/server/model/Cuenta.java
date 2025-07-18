@@ -3,11 +3,11 @@ package com.fintech.server.model;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Cuenta {
+public class Cuenta { // INICIO CLASE CUENTA;
 
 	private long codigoUnico;
 	private double saldoInicial;
-	private Cliente cliente; // ASOCIACIÓN;
+	private Cliente cliente; // TIPO DE RELACIÓN: ASOCIACIÓN. Cuenta 1 --> 1 Cliente;
 
 	public Cuenta(Cliente cliente) {
 		if (cliente == null) {
@@ -18,6 +18,7 @@ public class Cuenta {
 		this.codigoUnico = generarCodigoUnico();
 	}
 
+	// GENERAR CODIGO UNICO;
 	private long generarCodigoUnico() {
 		// Genera un número aleatorio entre 1000000000 y 9999999999 (10 dígitos)
 		long numero = (long) (Math.random() * 9_000_000_000L) + 1_000_000_000L;
@@ -84,4 +85,4 @@ public class Cuenta {
 		System.out.println("==============================");
 	}
 
-}
+} // FIN CLASE CUENTA;
