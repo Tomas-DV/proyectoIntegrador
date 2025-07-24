@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Fintech</title>
+  <link rel="stylesheet" href="../styles/dashboard.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Bienvenido, Usuario</h1>
+
+    <div class="balance">
+      <p>Saldo actual:</p>
+      <h2>$ <span id="saldo">12,450.00</span></h2>
+    </div>
+
+    <div class="actions">
+      <button onclick="transferir()">Transferir Dinero</button>
+      <button onclick="ingresar()">Ingresar Dinero</button>
+      <button onclick="verMovimientos()">Ver Movimientos</button>
+    </div>
+  </div>
+
+  <script src="../scripts/dashboard.js"></script>
+</body>
+</html>

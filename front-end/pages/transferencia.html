@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Transferencia</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../styles/transferencia.css" />
 </head>
 <body>
   <div class="transfer-container">
@@ -21,16 +21,6 @@
     </form>
   </div>
 
-  <script>
-    document.getElementById("transferForm").addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const correo = document.getElementById("correo").value;
-      const monto = document.getElementById("monto").value;
-
-      alert(Transferencia de $${monto} enviada a ${correo});
-      // Aquí podrías hacer un fetch POST al backend en producción
-    });
-  </script>
+  <script src="../scripts/transferencia.js"></script>
 </body>
 </html>
