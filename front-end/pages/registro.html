@@ -4,10 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Registro Fintech</title>
+  <link rel="stylesheet" href="../styles/navbar.css" />
   <link rel="stylesheet" href="../styles/registro.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <div class="registro-container">
+  <!-- Navbar Vertical -->
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="home.html" class="logo-link">
+        <h2><i class="fas fa-coins"></i> FinTech Pro</h2>
+      </a>
+    </div>
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="login.html" class="nav-link">
+          <i class="fas fa-sign-in-alt"></i>
+          <span>Login</span>
+        </a>
+        <a href="registro.html" class="nav-link">
+          <i class="fas fa-user-plus"></i>
+          <span>Registro</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="content-with-navbar">
+    <div class="registro-container">
     <h2>Crear cuenta en Fintech Bank</h2>
     <form id="registroForm">
       <label for="nombre">Nombre completo:</label>
@@ -37,6 +60,7 @@
     </form>
     <p id="error" class="error"></p>
     <p class="login-link">¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+    </div>
   </div>
 
   <script src="../scripts/registro.js"></script>

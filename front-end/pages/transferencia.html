@@ -4,10 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Transferencia</title>
+  <link rel="stylesheet" href="../styles/navbar.css" />
   <link rel="stylesheet" href="../styles/transferencia.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <div class="transfer-container">
+  <!-- Navbar Vertical -->
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="home.html" class="logo-link">
+        <h2><i class="fas fa-coins"></i> FinTech Pro</h2>
+      </a>
+    </div>
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="dashboard.html" class="nav-link">
+          <i class="fas fa-tachometer-alt"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="transferencia.html" class="nav-link">
+          <i class="fas fa-exchange-alt"></i>
+          <span>Transferir</span>
+        </a>
+        <a href="login.html" class="nav-link">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Cerrar Sesión</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="content-with-navbar">
+    <div class="transfer-container">
     <h2>Transferencia</h2>
 
     <form id="transferForm">
@@ -19,6 +46,7 @@
 
       <button type="submit">Transferir</button>
     </form>
+    </div>
   </div>
 
   <script src="../scripts/transferencia.js"></script>

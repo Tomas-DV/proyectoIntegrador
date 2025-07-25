@@ -1,0 +1,115 @@
+/* Variables CSS para el navbar */
+:root {
+  --primary-color: #2563eb;
+  --primary-dark: #1d4ed8;
+  --accent-color: #f59e0b;
+  --sidebar-width: 280px;
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Navigation */
+.sidebar {
+  width: var(--sidebar-width);
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: white;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+}
+
+.sidebar-header {
+  padding: 2rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sidebar-header i {
+  color: var(--accent-color);
+}
+
+.nav-menu {
+  flex: 1;
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin: 0.5rem 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 0 25px 25px 0;
+  margin-right: 1rem;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  transform: translateX(5px);
+}
+
+.nav-item.active .nav-link {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: 600;
+}
+
+.nav-link i {
+  font-size: 1.2rem;
+  width: 20px;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: white;
+}
+
+.logo-link h2 {
+  color: white;
+  text-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+}
+
+.logo-link:hover {
+  text-decoration: none;
+}
+
+/* Ajuste para el contenido principal cuando hay navbar */
+.content-with-navbar {
+  margin-left: var(--sidebar-width);
+  min-height: 100vh;
+  width: calc(100% - var(--sidebar-width));
+}
+
+/* Responsive Design para navbar */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .content-with-navbar {
+    margin-left: 0;
+    width: 100%;
+  }
+}
